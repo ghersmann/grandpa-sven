@@ -49,6 +49,15 @@
 <style scoped>
 .text-article {
   width: 20rem;
+  opacity: 0;
+  animation: fadeIn 10s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 .blue-main {

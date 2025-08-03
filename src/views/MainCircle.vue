@@ -2,48 +2,48 @@
   <main class="blue-main">
     <svg viewBox="0 0 480 480" class="circle-path-text">
       <defs>
-        <!-- Top Arc (clockwise) -->
-        <path
-          id="topTextPath"
-          d="M240,240 m -200,0 a 200,200 0 0,1 400,0"
-        />
-
-        <!-- Bottom Arc (reversed direction for upright text) -->
-        <path
-          id="bottomTextPath"
-          d="M40,240 a 200,200 0 0,0 400,0"
-        />
+        <path id="topTextPath" d="M240,240 m -200,0 a 200,200 0 0,1 400,0" />
+        <path id="bottomTextPath" d="M40,240 a 200,200 0 0,0 400,0" />
       </defs>
 
       <text dy="10">
-        <textPath
-          href="#topTextPath"
-          startOffset="50%"
-          text-anchor="middle"
-        >
-          Empfohlen
+        <textPath href="#topTextPath" startOffset="50%" text-anchor="middle">
+          {{ t('circleTop') }}
         </textPath>
       </text>
 
       <text dy="15">
-        <textPath
-          href="#bottomTextPath"
-          startOffset="50%"
-          text-anchor="middle"
-        >
-          von Opa Sven
+        <textPath href="#bottomTextPath" startOffset="50%" text-anchor="middle">
+          {{ t('circleBottom') }}
         </textPath>
       </text>
     </svg>
 
     <article class="text-article">
-      <p>Du findest nicht uns – wir finden dich.</p> 
-      <p>Wir sind nicht an Kooperationen interessiert.</p>
-      <p>Wenn du etwas machst und empfohlen werden möchtest, kontaktiere uns auf keinen Fall.</p>
+      <p>{{ t('paragraph1') }}</p> 
+      <p>{{ t('paragraph2') }}</p>
+      <p>{{ t('paragraph3') }}</p>
     </article>
   </main>
+
+  <LanguageSwitch />
 </template>
 
+<script>
+import { useI18n } from 'vue-i18n'
+import LanguageSwitch from '../components/LanguageSwitch.vue'
+
+export default {
+  name: 'MainCircle',
+  components: {
+    LanguageSwitch,
+  },
+  setup() {
+    const { t } = useI18n()
+    return { t }
+  }
+}
+</script>
 
 
 <style scoped>
@@ -91,5 +91,4 @@
   font-size: 3rem;
   letter-spacing: 2px;
 }
-
 </style>

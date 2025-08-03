@@ -1,9 +1,15 @@
 export default {
   circleTop: "Empfohlen",
   circleBottom: "von Opa Sven",
-  paragraph1: "Du findest nicht uns – wir finden dich.",
-  paragraph2: "Wir sind an Kooperationen nicht interessiert.",
-  paragraph3: "Wenn Du etwas produzierst und empfohlen werden möchtest, dann wende Dich unter keinen Umständen an uns.",
+
+  home1: "Wir empfehlen, was uns gefällt.",
+  home2: "Nicht mehr und nicht weniger.",
+
+  link1: "Kontakt",
+
+  contact1: "Du findest nicht uns – wir finden dich.",
+  contact2: "Wir sind an Kooperationen nicht interessiert.",
+  contact3: "Wenn Du etwas produzierst und empfohlen werden möchtest, dann wende Dich unter keinen Umständen an uns.",
 
   lang: {
     german: "Deutsch",

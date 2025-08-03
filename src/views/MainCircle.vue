@@ -20,9 +20,7 @@
     </svg>
 
     <article class="text-article">
-      <p>{{ t('paragraph1') }}</p> 
-      <p>{{ t('paragraph2') }}</p>
-      <p>{{ t('paragraph3') }}</p>
+      <router-view />
     </article>
   </main>
 
@@ -32,6 +30,7 @@
 <script>
 import { useI18n } from 'vue-i18n'
 import LanguageSwitch from '../components/LanguageSwitch.vue'
+
 
 export default {
   name: 'MainCircle',

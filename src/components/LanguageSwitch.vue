@@ -10,6 +10,8 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+// Ellie, Selma, Ella, irma
+
 export default {
   name: 'LanguageSwitch',
   setup() {
